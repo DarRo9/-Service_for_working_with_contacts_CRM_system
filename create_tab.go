@@ -1,3 +1,7 @@
+/* This is a service for getting contacts from a CRM service, saving them to/removing them from a database. 
+The connection to the service is made using acces token and login. 
+There is also a client that can send a delete request and receive a success/failure response from the server. */
+
 package main
 
 import (
@@ -142,7 +146,7 @@ var db2, _ = sql.Open("mysql", "steven:here@tcp(127.0.0.1:3306)/fullstack_api")
 
 // Create_Tabs - функция для создания и заполнения таблиц
 func Create_Tabs(atoken string) {
-	url := "https://new999account999.amocrm.ru/api/v4/contacts"
+	url := "link with login and api"
 	at := Access{atoken}
 	var bearer = "Bearer " + at.token
 
